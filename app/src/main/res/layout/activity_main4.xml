@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <ImageView
+        android:id="@+id/firstImage"
+        android:layout_width="116dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:onClick="banana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/banna" />
+
+    <Button
+        android:id="@+id/bananaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:enabled="false"
+        android:onClick="bananaCheck"
+        android:text="Check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/firstImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/bananaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Fruit Name Here"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/firstImage"
+        app:layout_constraintTop_toBottomOf="@+id/bananaButton" />
+
+    <ImageView
+        android:id="@+id/secondImage"
+        android:layout_width="118dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:onClick="orange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstImage"
+        app:srcCompat="@drawable/orange" />
+
+    <Button
+        android:id="@+id/orangeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:enabled="false"
+        android:onClick="orangeCheck"
+        android:text="Check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/secondImage"
+        app:layout_constraintTop_toBottomOf="@+id/firstImage" />
+
+    <EditText
+        android:id="@+id/orangeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Orange Name Here"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/secondImage"
+        app:layout_constraintTop_toBottomOf="@+id/orangeButton" />
+
+    <ImageView
+        android:id="@+id/thirdImage"
+        android:layout_width="121dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:onClick="strawberry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondImage"
+        app:srcCompat="@drawable/straw" />
+
+    <Button
+        android:id="@+id/strawButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:enabled="false"
+        android:onClick="strawCheck"
+        android:text="Check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/thirdImage"
+        app:layout_constraintTop_toBottomOf="@+id/secondImage" />
+
+    <EditText
+        android:id="@+id/strawText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Strawberry Name Here"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/thirdImage"
+        app:layout_constraintTop_toBottomOf="@+id/strawButton" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdImage"
+        tools:text="Text Score" />
+
+    <Button
+        android:id="@+id/firstTransfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="animalTransfer"
+        android:text="Go to Animals Page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreText" />
+
+    <Button
+        android:id="@+id/secondTransfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="vegeTransfer"
+        android:text="Go to Vegetables Page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstTransfer" />
+</androidx.constraintlayout.widget.ConstraintLayout>
